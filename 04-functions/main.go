@@ -12,3 +12,8 @@ func log(message string) string {
 func classifyAge(age int) (int, bool) {
 	return age, age > 50
 }
+
+// parameters with the same type can share the same type definition
+func sum(a, b int) int {
+	return a + b
+}
