@@ -7,6 +7,7 @@ type Person struct {
 	Name   string
 	Age    int
 	Height float32
+	Father *Person
 }
 
 func main() {
@@ -26,4 +27,17 @@ func main() {
 	fmt.Println(fin)
 	fmt.Println(fin.Height)
 
+	child := &Person{
+		Name:   "Ned Stark",
+		Age:    200,
+		Height: 291,
+		Father: &Person{
+			Name:   "Elder Stark",
+			Age:    400,
+			Height: 234,
+			Father: nil,
+		},
+	}
+
+	println(child)
 }
