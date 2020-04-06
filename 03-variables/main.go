@@ -19,4 +19,8 @@ func main() {
 	// ./main.go:18:6: no new variables on left side of :=
 	// age := 21
 	// fmt.Println(age)
+
+	// multiple variable assignment
+	name, height := "Noble", 192
+	fmt.Println(name, height)
 }
