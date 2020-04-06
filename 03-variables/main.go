@@ -15,4 +15,8 @@ func main() {
 	// inferred type variable declaration
 	age := 20
 	fmt.Println(age)
+
+	// ./main.go:18:6: no new variables on left side of :=
+	// age := 21
+	// fmt.Println(age)
 }
