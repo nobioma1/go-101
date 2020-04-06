@@ -1,3 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	// Multiple assignment
+	age, class1 := classifyAge(20)
+	fmt.Println(age, class1)
+	// ignore declaration
+	_, class2 := classifyAge(50)
+	fmt.Println(class2)
+
+}
+
 // function prints 'Hello World'
 func printHelloWorld() {
 	fmt.Println("Hello World")
