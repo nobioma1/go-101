@@ -7,3 +7,8 @@ func printHelloWorld() {
 func log(message string) string {
 	return message
 }
+
+// type and return two return values
+func classifyAge(age int) (int, bool) {
+	return age, age > 50
+}
