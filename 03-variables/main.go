@@ -11,4 +11,8 @@ func main() {
 	// One line declaration
 	var speed float32 = 358.69
 	fmt.Printf("It's travelling at %.2f knots\n", speed)
+
+	// inferred type variable declaration
+	age := 20
+	fmt.Println(age)
 }
